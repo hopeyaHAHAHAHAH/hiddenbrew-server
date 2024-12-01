@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB ERP</title>
+    <link rel="stylesheet" href="server-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <div class="hamburger" onclick="shownav()">&#9776;</div> <a href="index.html">HB ERP</a>
+        </div>
+        <br>
+        <br>
+        <div class="nav-cont">
+            <div class="nav-left nav-content">
+                <a href="server-reg-users.html">USERS</a>
+                <a href="server-inventory.html">INVENTORY</a>
+                <a href="server-sales.html">SALES</a>
+                <a href="server-orders.html">ORDERS</a>
+                <a href="server-cust-message.html">MESSAGES</a>
+            </div>
+            <div class="nav-icons nav-content">
+                <button class="getstarted"><a href="client-login-register.html">LOGIN</a></button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="menu-title">
+        <h1>SALES</h1>
+        <br>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Product Name</th>
+                        <th>Customer Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="ID">1</td>
+                        <td data-label="Date">2024-11-29</td>
+                        <td data-label="Product Name">Latte</td>
+                        <td data-label="Customer Name">John Doe</td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Price">$5.00</td>
+                        <td data-label="Total">$10.00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">2</td>
+                        <td data-label="Date">2024-11-28</td>
+                        <td data-label="Product Name">Espresso</td>
+                        <td data-label="Customer Name">Jane Smith</td>
+                        <td data-label="Quantity">1</td>
+                        <td data-label="Price">$3.00</td>
+                        <td data-label="Total">$3.00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">3</td>
+                        <td data-label="Date">2024-11-27</td>
+                        <td data-label="Product Name">Cappuccino</td>
+                        <td data-label="Customer Name">Alice Brown</td>
+                        <td data-label="Quantity">3</td>
+                        <td data-label="Price">$4.50</td>
+                        <td data-label="Total">$13.50</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">4</td>
+                        <td data-label="Date">2024-11-26</td>
+                        <td data-label="Product Name">Mocha</td>
+                        <td data-label="Customer Name">Bob Johnson</td>
+                        <td data-label="Quantity">1</td>
+                        <td data-label="Price">$6.00</td>
+                        <td data-label="Total">$6.00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">5</td>
+                        <td data-label="Date">2024-11-25</td>
+                        <td data-label="Product Name">Americano</td>
+                        <td data-label="Customer Name">Emily Davis</td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Price">$3.50</td>
+                        <td data-label="Total">$7.00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">6</td>
+                        <td data-label="Date">2024-11-24</td>
+                        <td data-label="Product Name">Macchiato</td>
+                        <td data-label="Customer Name">Michael Lee</td>
+                        <td data-label="Quantity">4</td>
+                        <td data-label="Price">$4.00</td>
+                        <td data-label="Total">$16.00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">7</td>
+                        <td data-label="Date">2024-11-23</td>
+                        <td data-label="Product Name">Flat White</td>
+                        <td data-label="Customer Name">Sarah Wilson</td>
+                        <td data-label="Quantity">1</td>
+                        <td data-label="Price">$5.50</td>
+                        <td data-label="Total">$5.50</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">8</td>
+                        <td data-label="Date">2024-11-22</td>
+                        <td data-label="Product Name">Iced Coffee</td>
+                        <td data-label="Customer Name">Chris Martin</td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Price">$4.75</td>
+                        <td data-label="Total">$9.50</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">9</td>
+                        <td data-label="Date">2024-11-21</td>
+                        <td data-label="Product Name">Tea</td>
+                        <td data-label="Customer Name">Laura King</td>
+                        <td data-label="Quantity">3</td>
+                        <td data-label="Price">$2.50</td>
+                        <td data-label="Total">$7.50</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">10</td>
+                        <td data-label="Date">2024-11-20</td>
+                        <td data-label="Product Name">Hot Chocolate</td>
+                        <td data-label="Customer Name">James Taylor</td>
+                        <td data-label="Quantity">2</td>
+                        <td data-label="Price">$4.25</td>
+                        <td data-label="Total">$8.50</td>
+                    </tr>
+                </tbody>
+            </table>
+                        
+        </center>
+    </div>
+
+    <br>
+    <br>
+    
+</body>
+</html>

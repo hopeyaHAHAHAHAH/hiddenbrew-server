@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB ERP</title>
+    <link rel="stylesheet" href="server-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <div class="hamburger" onclick="shownav()">&#9776;</div> <a href="index.html">HB ERP</a>
+        </div>
+        <br>
+        <br>
+        <div class="nav-cont">
+            <div class="nav-left nav-content">
+                <a href="server-reg-users.html">USERS</a>
+                <a href="server-inventory.html">INVENTORY</a>
+                <a href="server-sales.html">SALES</a>
+                <a href="server-orders.html">ORDERS</a>
+                <a href="server-cust-message.html">MESSAGES</a>
+            </div>
+            <div class="nav-icons nav-content">
+                <button class="getstarted"><a href="client-login-register.html">LOGIN</a></button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="menu-title">
+        <h1>DASHBOARD</h1>
+        <p class="menu-par">
+            <i>~ Welcome Admin ~</i>
+        </p>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="dash-summ">
+        <div class="dash-box">
+            <div class="dash-cont users">
+                <div class="dash-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="dash-box-cont">
+                    <center>
+                        <h1>Registered <br> Users</h1>
+                        <h2>100</h2>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="dash-box">
+            <div class="dash-cont">
+                <div class="dash-icon">
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
+                <div class="dash-box-cont">
+                    <center>
+                        <h1>Total Sales</h1>
+                        <h2>P 10000</h2>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="dash-box">
+            <div class="dash-cont">
+                <div class="dash-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <div class="dash-box-cont">
+                    <center>
+                        <h1>Total Orders</h1>
+                        <h2>123</h2>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="menu-title">
+        <h1>SALES SUMMARY</h1>
+        <canvas id="salesChart"></canvas>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="menu-title">
+        <h1>RECENT ORDERS</h1>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Order</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Date">2024-11-29</td>
+                        <td data-label="User">John Doe</td>
+                        <td data-label="Email"><a href="mailto:john.doe@example.com" class="email">john.doe@example.com</a></td>
+                        <td data-label="Address">123 Main St, Springfield</td>
+                        <td data-label="Order">Latte</td>
+                        <td data-label="Quantity">2</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date">2024-11-28</td>
+                        <td data-label="User">Jane Smith</td>
+                        <td data-label="Email"><a href="mailto:jane.smith@example.com" class="email">jane.smith@example.com</a></td>
+                        <td data-label="Address">456 Oak Ave, Shelbyville</td>
+                        <td data-label="Order">Espresso</td>
+                        <td data-label="Quantity">1</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date">2024-11-27</td>
+                        <td data-label="User">Alice Brown</td>
+                        <td data-label="Email"><a href="mailto:alice.brown@example.com" class="email">alice.brown@example.com</a></td>
+                        <td data-label="Address">789 Maple Dr, Ogdenville</td>
+                        <td data-label="Order">Cappuccino</td>
+                        <td data-label="Quantity">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="server-js.js"></script>
+</body>
+
+</html>

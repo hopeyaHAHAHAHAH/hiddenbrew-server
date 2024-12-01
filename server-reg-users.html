@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB ERP</title>
+    <link rel="stylesheet" href="server-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <div class="hamburger" onclick="shownav()">&#9776;</div> <a href="index.html">HB ERP</a>
+        </div>
+        <br>
+        <br>
+        <div class="nav-cont">
+            <div class="nav-left nav-content">
+                <a href="server-reg-users.html">USERS</a>
+                <a href="server-inventory.html">INVENTORY</a>
+                <a href="server-sales.html">SALES</a>
+                <a href="server-orders.html">ORDERS</a>
+                <a href="server-cust-message.html">MESSAGES</a>
+            </div>
+            <div class="nav-icons nav-content">
+                <button class="getstarted"><a href="client-login-register.html">LOGIN</a></button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="menu-title">
+        <h1>REGISTERED USERS</h1>
+        <br>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="ID">1</td>
+                        <td data-label="Username">John Doe</td>
+                        <td data-label="Email"><a href="mailto:john.doe@example.com" class="email">john.doe@example.com</a></td>
+                        <td data-label="Address">123 Main St, Springfield</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">2</td>
+                        <td data-label="Username">Jane Smith</td>
+                        <td data-label="Email"><a href="mailto:jane.smith@example.com" class="email">jane.smith@example.com</a></td>
+                        <td data-label="Address">456 Oak Ave, Shelbyville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">3</td>
+                        <td data-label="Username">Alice Brown</td>
+                        <td data-label="Email"><a href="mailto:alice.brown@example.com" class="email">alice.brown@example.com</a></td>
+                        <td data-label="Address">789 Maple Dr, Ogdenville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">4</td>
+                        <td data-label="Username">Bob Johnson</td>
+                        <td data-label="Email"><a href="mailto:bob.johnson@example.com" class="email">bob.johnson@example.com</a></td>
+                        <td data-label="Address">321 Elm St, Capital City</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">5</td>
+                        <td data-label="Username">Emily Davis</td>
+                        <td data-label="Email"><a href="mailto:emily.davis@example.com" class="email">emily.davis@example.com</a></td>
+                        <td data-label="Address">654 Pine Ln, Shelbyville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">6</td>
+                        <td data-label="Username">Michael Lee</td>
+                        <td data-label="Email"><a href="mailto:michael.lee@example.com" class="email">michael.lee@example.com</a></td>
+                        <td data-label="Address">987 Oak Dr, Ogdenville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">7</td>
+                        <td data-label="Username">Sarah Wilson</td>
+                        <td data-label="Email"><a href="mailto:sarah.wilson@example.com" class="email">sarah.wilson@example.com</a></td>
+                        <td data-label="Address">159 Maple St, Springfield</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">8</td>
+                        <td data-label="Username">Chris Martin</td>
+                        <td data-label="Email"><a href="mailto:chris.martin@example.com" class="email">chris.martin@example.com</a></td>
+                        <td data-label="Address">753 Birch Blvd, Shelbyville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">9</td>
+                        <td data-label="Username">Laura King</td>
+                        <td data-label="Email"><a href="mailto:laura.king@example.com" class="email">laura.king@example.com</a></td>
+                        <td data-label="Address">258 Cedar Ct, Ogdenville</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ID">10</td>
+                        <td data-label="Username">James Taylor</td>
+                        <td data-label="Email"><a href="mailto:james.taylor@example.com" class="email">james.taylor@example.com</a></td>
+                        <td data-label="Address">456 Willow Way, Springfield</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </center>
+    </div>
+
+    <br>
+    <br>
+    
+</body>
+</html>

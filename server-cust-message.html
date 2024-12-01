@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB ERP</title>
+    <link rel="stylesheet" href="server-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <div class="hamburger" onclick="shownav()">&#9776;</div> <a href="index.html">HB ERP</a>
+        </div>
+        <br>
+        <br>
+        <div class="nav-cont">
+            <div class="nav-left nav-content">
+                <a href="server-reg-users.html">USERS</a>
+                <a href="server-inventory.html">INVENTORY</a>
+                <a href="server-sales.html">SALES</a>
+                <a href="server-orders.html">ORDERS</a>
+                <a href="server-cust-message.html">MESSAGES</a>
+            </div>
+            <div class="nav-icons nav-content">
+                <button class="getstarted"><a href="client-login-register.html">LOGIN</a></button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="menu-title">
+        <h1>MESSAGES</h1>
+        <br>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Message ID</th>
+                        <th>Date</th>
+                        <th>Customer Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Message Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Message ID">001</td>
+                        <td data-label="Date">2024-11-29</td>
+                        <td data-label="Customer Name">John Doe</td>
+                        <td data-label="Email"><a href="mailto:john.doe@example.com" class="email">john.doe@example.com</a></td>
+                        <td data-label="Subject">Order Inquiry</td>
+                        <td data-label="Message Content">Can I update my delivery address for order #1001?</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Message ID">002</td>
+                        <td data-label="Date">2024-11-28</td>
+                        <td data-label="Customer Name">Jane Smith</td>
+                        <td data-label="Email"><a href="mailto:jane.smith@example.com" class="email">jane.smith@example.com</a></td>
+                        <td data-label="Subject">Feedback</td>
+                        <td data-label="Message Content">I really enjoyed the coffee! Thank you for the excellent service.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Message ID">003</td>
+                        <td data-label="Date">2024-11-27</td>
+                        <td data-label="Customer Name">Alice Brown</td>
+                        <td data-label="Email"><a href="mailto:alice.brown@example.com" class="email">alice.brown@example.com</a></td>
+                        <td data-label="Subject">Technical Issue</td>
+                        <td data-label="Message Content">I'm having trouble placing an order on the website.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Message ID">004</td>
+                        <td data-label="Date">2024-11-26</td>
+                        <td data-label="Customer Name">Bob Johnson</td>
+                        <td data-label="Email"><a href="mailto:bob.johnson@example.com" class="email">bob.johnson@example.com</a></td>
+                        <td data-label="Subject">Cancellation Request</td>
+                        <td data-label="Message Content">I'd like to cancel my order #1004.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Message ID">005</td>
+                        <td data-label="Date">2024-11-25</td>
+                        <td data-label="Customer Name">Emily Davis</td>
+                        <td data-label="Email"><a href="mailto:emily.davis@example.com" class="email">emily.davis@example.com</a></td>
+                        <td data-label="Subject">Special Request</td>
+                        <td data-label="Message Content">Can I request a custom coffee blend for my order?</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </center>
+    </div>
+
+    <br>
+    <br>
+    
+</body>
+</html>
